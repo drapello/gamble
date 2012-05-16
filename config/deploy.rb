@@ -5,7 +5,7 @@ set :scm, :git
 set :user, "ubuntu"
 set :use_sudo, false
 
-set :copy_exclude, [".git/*", "data/*",]
+set :copy_exclude, [".git", "data",]
 
 
 #role :web, "your web-server here"                          # Your HTTP server, Apache/etc
