@@ -5,6 +5,9 @@ set :scm, :git
 set :user, "ubuntu"
 set :use_sudo, false
 
+set :copy_exclude, [".git/*", "data/*",]
+
+
 #role :web, "your web-server here"                          # Your HTTP server, Apache/etc
 #role :app, "your app-server here"                          # This may be the same as your `Web` server
 #role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
