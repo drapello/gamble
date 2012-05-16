@@ -12,7 +12,7 @@ set :use_sudo, false
 server "23.23.230.249", :app, :web, :db, :primary => true
 set :deploy_to, "/home/ubuntu/projetos/devfromgithub"
 
-#set :deploy_via, :copy
+set :deploy_via, :copy
 
 
 # if you want to clean up old releases on each deploy uncomment this:
