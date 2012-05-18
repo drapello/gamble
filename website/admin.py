@@ -6,5 +6,9 @@ class ProfileAdmin(admin.ModelAdmin):
     list_filter = ['location','company']
     search_fields = ['username', 'nome', 'location','linguagens']
 
+
+class AccountAdmin(admin.ModelAdmin):
+    search_fields = ['username',]
+
 admin.site.register(Profile, ProfileAdmin)
-admin.site.register(Account)
+admin.site.register(Account, AccountAdmin)

@@ -1,4 +1,3 @@
-# Django settings for devingithub project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -79,3 +78,4 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'website',
 )
+
