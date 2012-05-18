@@ -72,14 +72,12 @@ class Command(BaseCommand):
                     break
                     
             if not local:
-                for (estado, sigla) in estadosesiglas:
-                    if sigla in github_profile.location:
-                        local = estado
-                        break
-                
-            if not local:
                 if "brasil" in self.normalize(github_profile.location).lower():
                     local = "brasil"
+                    for (estado, sigla) in estadosesiglas:
+                        if sigla in github_profile.location:
+                            local = estado
+                            break
             
             if local and len(github_profile.projetos) > 0 and self.normalize(github_profile.company).lower() != "globo.com" and len(linguagens)>0:    
                 user = Profile.objects.get_or_create(
