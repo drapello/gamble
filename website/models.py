@@ -43,4 +43,4 @@ class Hipotese(models.Model):
     time = models.CharField(max_length=255, null=True, blank=True)
     
     def __str__(self):
-        return '%s %s' % (self.hipotese,)
+        return '%s' % (self.hipotese,)
