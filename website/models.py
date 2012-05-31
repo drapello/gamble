@@ -30,3 +30,14 @@ class Profile(models.Model):
 
     def __str__(self):
         return '%s' % (self.username)
+
+class Hipotese(models.Model):
+    hipotese = models.TextField(max_length=255, null=True, blank=True)
+    expectativa = models.TextField(max_length=255, null=True, blank=True)
+    resultado = models.TextField(max_length=255, null=True, blank=True)
+    avaliacao = models.TextField(max_length=255, null=True, blank=True)
+    periodo_ini_desenvolvimento = models.DateField()
+    periodo_fim_desenvolvimento = models.DateField()
+    periodo_ini_avaliacao = models.DateField()
+    periodo_fim_avaliacao = models.DateField()
+    time = models.CharField(max_length=255, null=True, blank=True)

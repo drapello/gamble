@@ -10,5 +10,13 @@ class ProfileAdmin(admin.ModelAdmin):
 class AccountAdmin(admin.ModelAdmin):
     search_fields = ['username',]
 
+class HipoteseAdmin(admin.ModelAdmin):
+    search_fields = ['hipotese', 'expectativa', 'avaliacao',]
+    list_filter = ['time',]
+    
+
+
+
 admin.site.register(Profile, ProfileAdmin)
 admin.site.register(Account, AccountAdmin)
+admin.site.register(Hipotese, HipoteseAdmin)
