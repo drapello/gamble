@@ -11,7 +11,7 @@ class AccountAdmin(admin.ModelAdmin):
     search_fields = ['username',]
 
 class HipoteseAdmin(admin.ModelAdmin):
-    list_display = ('hipotese', 'expectativa', 'resultado','avaliacao',)
+    list_display = ('hipotese', 'expectativa', 'resultado','avaliacao',) 
     search_fields = ['hipotese', 'expectativa', 'avaliacao',]
     list_filter = ['time',]
     
