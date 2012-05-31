@@ -41,3 +41,6 @@ class Hipotese(models.Model):
     periodo_ini_avaliacao = models.DateField()
     periodo_fim_avaliacao = models.DateField()
     time = models.CharField(max_length=255, null=True, blank=True)
+    
+    def __str__(self):
+        return '%s %s' % (self.hipotese,)
