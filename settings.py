@@ -78,5 +78,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'website',
     'globojoinus',
+    'watcher',
 )
 
