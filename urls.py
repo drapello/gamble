@@ -16,6 +16,6 @@ urlpatterns = patterns('',
     (r'^watcher/', include('watcher.urls')),
     (r'^globoservico/', include('globoservico.urls')),
     (r'^globocom/', include('globojoinus.urls')),
-    (r'^github/', include('website.urls')),
+    (r'^github/', include('processeja.urls')),
     (r'^admin/', include(admin.site.urls)),
 )

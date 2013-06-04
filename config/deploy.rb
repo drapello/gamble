@@ -1,5 +1,5 @@
 set :application, "devfromgithub"
-set :repository,  "git@ngit.globoi.com:website/website.git"
+set :repository,  "git@github.com:drapello/gamble.git"
 
 set :scm, :git
 set :user, "ubuntu"
